@@ -1,0 +1,11 @@
+---
+applications:
+  - name: user-notes
+    memory: 768M
+    instances: 1
+    path: target\user-notes-1.0.0.jar
+    random-route: true
+    services:
+      - mysqldb
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git
